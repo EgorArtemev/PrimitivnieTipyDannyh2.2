@@ -6,15 +6,15 @@ public class Main {
         int recharge2 = 1100;
         int summary1 = recharge1 + balance;
         int summary2 = recharge2 + balance;
-        int bonus1 = summary1 / 100;
-        int bonus2 = summary2 / 100;
+        int bonus1 = recharge1 / 100;
+        int bonus2 = recharge2 / 100;
 
 
         if (recharge1 >= 1000) {
-            System.out.println(summary1 + bonus1);
+            System.out.println(bonus1 + summary1);
         } else {
             if (recharge2 >= 1000)
-                System.out.println(summary2 + bonus2);
+                System.out.println(bonus2 + summary2);
         }
 
 
