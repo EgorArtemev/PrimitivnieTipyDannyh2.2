@@ -2,19 +2,17 @@ public class Main {
     public static void main(String[] args) {
 
         int balance = 100;
-        int recharge1 = 300;
-        int recharge2 = 1100;
-        int summary1 = recharge1 + balance;
-        int summary2 = recharge2 + balance;
-        int bonus1 = recharge1 / 100;
-        int bonus2 = recharge2 / 100;
+        int recharge = 1500;
+        int summary = recharge + balance;
+        int bonus = recharge / 100;
 
 
-        if (recharge1 >= 1000) {
-            System.out.println(bonus1 + summary1);
+
+        if (recharge >= 1000) {
+            System.out.println(bonus + summary);
         } else {
-            if (recharge2 >= 1000)
-                System.out.println(bonus2 + summary2);
+            System.out.println(summary);
+            
         }
 
 
